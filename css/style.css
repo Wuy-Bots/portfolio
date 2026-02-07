@@ -105,6 +105,44 @@ body {
     background-clip: text;
 }
 
+/* Specific fix for Homepage Title to remove overlapping line */
+.section-title.home-title {
+    margin-bottom: 1rem;
+}
+
+.section-title.home-title::after {
+    content: none;
+}
+
+.accent-subtitle {
+    text-align: center;
+    color: var(--accent-pink);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+}
+
+/* Move the decorative line to the subtitle for homepage */
+.accent-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--violet-600), var(--accent-pink));
+    border-radius: 2px;
+    box-shadow: var(--glow-violet);
+}
+
 .section-title::after {
     content: '';
     position: absolute;
@@ -121,6 +159,70 @@ body {
 .highlight {
     color: var(--violet-400);
     position: relative;
+}
+
+/* HERO SCREEN & INTRO */
+.hero-screen {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+.intro-text-large {
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    line-height: 1.8;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+    padding: 0 2rem;
+    color: var(--text-secondary);
+}
+
+.intro-text-large strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* SCROLL HINT */
+.scroll-hint {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--text-muted);
+    font-size: 1.8rem;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-hint:hover {
+    opacity: 1;
+    color: var(--accent-pink);
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
 }
 
 .visually-hidden {
@@ -405,6 +507,11 @@ body {
     padding-top: 120px;
 }
 
+/* Override for home page to reduce top spacing */
+.home.page-section {
+    padding-top: 80px;
+}
+
 /* =========================================
    MOTIVATION SECTION
    ========================================= */
@@ -469,14 +576,14 @@ body {
 .tools-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
+    gap: 1.5rem;
 }
 
 .tool-card {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 2.25rem 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -485,6 +592,8 @@ body {
     transition: all var(--transition-base);
     position: relative;
     overflow: hidden;
+    min-height: 140px;
+    justify-content: center;
 }
 
 .tool-card::before {
