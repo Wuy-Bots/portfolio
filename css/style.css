@@ -539,6 +539,35 @@ body {
     z-index: 1;
 }
 
+/* Skills Tags */
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.skill-tag {
+    background: rgba(139, 92, 246, 0.1);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    color: var(--violet-300);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: rgba(139, 92, 246, 0.25);
+    border-color: var(--violet-500);
+    transform: translateY(-2px);
+    color: white;
+}
+
 /* =========================================
    PROJECTS SECTION
    ========================================= */
@@ -608,7 +637,8 @@ body {
 }
 
 /* --- Project Card (Header + Wrapper) --- */
-.project-card-wrapper {
+.project-card-wrapper,
+.glass-card {
     background: rgba(26, 15, 46, 0.6);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(139, 92, 246, 0.15);
@@ -978,8 +1008,173 @@ body {
 }
 
 /* Link reset for contact cards */
-a.contact-card {
-    color: inherit;
+/* =========================================
+   CONTACT UNIFIED CARD
+   ========================================= */
+.contact-unified-wrapper {
+    margin-top: 2rem;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+    transition: background 0.2s ease;
+    border-radius: 8px;
+}
+
+.contact-row:hover {
+    background: rgba(139, 92, 246, 0.05);
+}
+
+.contact-row:last-child {
+    border-bottom: none;
+}
+
+.contact-icon-small {
+    width: 40px;
+    height: 40px;
+    background: rgba(139, 92, 246, 0.1);
+    color: var(--violet-400);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.contact-value {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-value:hover {
+    color: var(--violet-400);
+}
+
+.copy-btn {
+    background: transparent;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    color: var(--violet-300);
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.copy-btn:hover {
+    background: var(--violet-600);
+    color: white;
+    border-color: var(--violet-600);
+}
+
+.contact-divider {
+    height: 1px;
+    background: rgba(139, 92, 246, 0.2);
+    margin: 1.5rem 0;
+}
+
+.contact-socials-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    background: rgba(26, 15, 46, 0.8);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    padding: 1rem;
+    border-radius: 12px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    background: var(--violet-700);
+    border-color: var(--violet-500);
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+.social-btn i {
+    font-size: 1.25rem;
+}
+
+/* Tooltip */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 60px;
+    background-color: var(--violet-600);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -30px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.75rem;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--violet-600) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* --- Unifying Home Tool Cards to Match --- */
+.tool-card {
+    /* Extending reuse of styles */
+    background: rgba(26, 15, 46, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(139, 92, 246, 0.15);
+    border-radius: 16px;
+    /* ... existing styles ... */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 

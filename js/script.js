@@ -92,3 +92,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log("Portfolio Technique loaded ✨");
 });
+
+// Copy to Clipboard Function
+window.copyToClipboard = function (text, btnElement) {
+    navigator.clipboard.writeText(text).then(() => {
+        // Validation visuelle
+        const originalIcon = btnElement.innerHTML;
+        const tooltip = btnElement.querySelector('.tooltiptext');
+
+        btnElement.innerHTML = '<i class="fa-solid fa-check"></i><span class="tooltiptext">Copié !</span>';
+        btnElement.style.color = '#4ade80'; // Green
+        btnElement.style.borderColor = '#4ade80';
+
+        if (tooltip) tooltip.innerText = "Copié !";
+
+        setTimeout(() => {
+            btnElement.innerHTML = '<i class="fa-regular fa-copy"></i><span class="tooltiptext">Copier</span>';
+            btnElement.style.color = '';
+            btnElement.style.borderColor = '';
+        }, 2000);
+    }).catch(err => {
+        console.error('Erreur de copie:', err);
+    });
+};
