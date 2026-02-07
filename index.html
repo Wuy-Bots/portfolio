@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio d'un développeur en reconversion. Projets, parcours et contact.">
-    <title>Portfolio | Apprenti Développeur</title>
+    <meta name="description"
+        content="Portfolio de Lagarde Tymothé, développeur en reconversion. Projets, parcours et contact.">
+    <meta name="theme-color" content="#1a0f2e">
+    <title>Lagarde Tymothé | Développeur Logiciel & Jeux</title>
 
     <!-- Polices (Google Fonts - Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -21,22 +24,29 @@
 
 <body>
 
-    <!-- Header / Navigation -->
-    <header class="header">
-        <div class="container nav-container">
-            <a href="#" class="logo">Dev<span class="highlight">Portfolio</span></a>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#hero" class="nav-link">Accueil</a></li>
-                    <li><a href="#projects" class="nav-link">Projets</a></li>
-                    <li><a href="#timeline" class="nav-link">Parcours</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <!-- Mobile Menu Button (Optional implementation for future) -->
-                <!-- <button class="menu-toggle" aria-label="Ouvrir le menu">Menu</button> -->
-            </nav>
+    <!-- Minimal Glassmorphic Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-wrapper">
+            <div class="nav-tabs">
+                <a href="index.html" class="nav-tab active">
+                    <i class="fa-solid fa-home"></i>
+                    <span>Accueil</span>
+                </a>
+                <a href="projets.html" class="nav-tab">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Projets</span>
+                </a>
+                <a href="parcours.html" class="nav-tab">
+                    <i class="fa-solid fa-timeline"></i>
+                    <span>Parcours</span>
+                </a>
+                <a href="contact.html" class="nav-tab">
+                    <i class="fa-solid fa-address-card"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <main>
         <!-- Hero Section -->
@@ -52,11 +62,10 @@
                     Je transforme mon parcours en atout pour concevoir des solutions robustes.
                 </p>
                 <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-                    <a href="#contact" class="btn btn-outline">Me contacter</a>
+                    <a href="projets.html" class="btn btn-primary">Voir mes projets</a>
+                    <a href="contact.html" class="btn btn-outline">Me contacter</a>
                 </div>
             </div>
-            <!-- Background element or illustration could go here -->
         </section>
 
         <!-- Motivation & Skills Section -->
@@ -98,7 +107,6 @@
                             </div>
                             <div class="tool-card">
                                 <i class="fa-brands fa-stack-overflow tool-icon"></i>
-                                <!-- Using SO/Doc generic or MDN if specific icon existed, but book is good -->
                                 <span>Documentation</span>
                             </div>
                             <div class="tool-card">
@@ -110,201 +118,11 @@
                 </div>
             </div>
         </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects section">
-            <div class="container">
-                <h2 class="section-title">Mes Projets</h2>
-                <div class="projects-grid">
-                    <!-- Project Card 1: Unity -->
-                    <article class="project-card">
-                        <div class="card-image-placeholder"
-                            style="background: linear-gradient(135deg, #1e3a8a 0%, #000000 100%);">
-                            <!-- Placeholder for Unity screenshot -->
-                            <div
-                                style="display:flex; justify-content:center; align-items:center; height:100%; color:rgba(255,255,255,0.2); font-size:3rem;">
-                                <i class="fa-brands fa-unity"></i></div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Prototype Unity & IA</h3>
-                            <p class="card-description">
-                                <strong>Défi :</strong> Maîtriser le C# et l'architecture Unity en s'aidant de l'IA pour
-                                accélérer l'apprentissage.
-                                Implémentation de mécaniques de jeu complexes et gestion de la physique.
-                            </p>
-                            <ul class="tags-list">
-                                <li class="tag">Unity 3D</li>
-                                <li class="tag">C#</li>
-                                <li class="tag">AI Assistance</li>
-                            </ul>
-                            <div class="card-links">
-                                <a href="#" target="_blank" class="link-item"><i class="fa-brands fa-github"></i> Voir
-                                    sur GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project Card 2: Crypto Backtesting -->
-                    <article class="project-card">
-                        <div class="card-image-placeholder"
-                            style="background: linear-gradient(135deg, #14532d 0%, #000000 100%);">
-                            <div
-                                style="display:flex; justify-content:center; align-items:center; height:100%; color:rgba(255,255,255,0.2); font-size:3rem;">
-                                <i class="fa-solid fa-chart-line"></i></div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Backtesting Crypto</h3>
-                            <p class="card-description">
-                                <strong>Défi :</strong> Concevoir un moteur de simulation performant pour valider des
-                                stratégies de trading.
-                                Focus sur la logique algorithmique pure et la manipulation de données financières.
-                            </p>
-                            <ul class="tags-list">
-                                <li class="tag">Python / JS</li>
-                                <li class="tag">Algorithmique</li>
-                                <li class="tag">Data Analysis</li>
-                            </ul>
-                            <div class="card-links">
-                                <a href="#" target="_blank" class="link-item"><i class="fa-brands fa-github"></i> Voir
-                                    sur GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project Card 3: Python Game Jam -->
-                    <article class="project-card">
-                        <div class="card-image-placeholder"
-                            style="background: linear-gradient(135deg, #7c2d12 0%, #000000 100%);">
-                            <div
-                                style="display:flex; justify-content:center; align-items:center; height:100%; color:rgba(255,255,255,0.2); font-size:3rem;">
-                                <i class="fa-brands fa-python"></i></div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Collection Mini-Jeux</h3>
-                            <p class="card-description">
-                                <strong>Défi :</strong> Coder sous contrainte de temps (Game Jam).
-                                Validation des concepts fondamentaux (boucles de jeu, collisions, POO) sans moteur de
-                                jeu complet.
-                            </p>
-                            <ul class="tags-list">
-                                <li class="tag">Python</li>
-                                <li class="tag">Pygame</li>
-                                <li class="tag">Game Dev</li>
-                            </ul>
-                            <div class="card-links">
-                                <a href="#" target="_blank" class="link-item"><i class="fa-brands fa-github"></i> Voir
-                                    sur GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Timeline Section (Parcours) -->
-        <section id="timeline" class="timeline section">
-            <div class="container">
-                <h2 class="section-title">Mon Parcours</h2>
-                <div class="timeline-container">
-
-                    <!-- Item 1: Current -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">Aujourd'hui</span>
-                            <h3 class="timeline-title">Recherche d'alternance</h3>
-                            <p class="timeline-desc">
-                                Développement de logiciels et jeux vidéo. Projets personnels en C#, Unity et
-                                technologies web.
-                                Objectif : Appliquer mes compétences algorithmiques en entreprise.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Item 2: Lady Sushi -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">Nov. 2024 – Présent</span>
-                            <h3 class="timeline-title">Livreur Polyvalent - Lady Sushi</h3>
-                            <p class="timeline-desc">
-                                Castelnau-Le-Lez. Gestion des commandes et relation client.
-                                Utilisation d'outils numériques pour le suivi et l'organisation.
-                                Adaptabilité et efficacité pour assurer un service rapide et de qualité.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Item 3: Burger King -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">Nov. 2022 – Nov. 2024</span>
-                            <h3 class="timeline-title">Équipier Polyvalent - Burger King</h3>
-                            <p class="timeline-desc">
-                                Castelnau-Le-Lez. Organisation et multitasking dans un environnement sous pression.
-                                Application stricte des procédures qualité/sécurité.
-                                Utilisation quotidienne d'outils numériques (caisse, bornes).
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Item 4: Bac -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">Juin 2020</span>
-                            <h3 class="timeline-title">Baccalauréat Scientifique</h3>
-                            <p class="timeline-desc">
-                                Lycée Victor Hugo, Lunel.
-                                <br>Spécialisation : Sciences de l'Ingénieur (SI).
-                                <br>Option : Informatique et Sciences du Numérique (ISN).
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact section">
-            <div class="container">
-                <h2 class="section-title">Me Contacter</h2>
-                <div class="contact-wrapper">
-                    <form class="contact-form" action="#" method="POST">
-                        <div class="form-group">
-                            <label for="name" class="visually-hidden">Nom</label>
-                            <input type="text" id="name" name="name" placeholder="Votre Nom" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="visually-hidden">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Votre Email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="visually-hidden">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Votre Message"
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
-                    </form>
-
-                    <div class="social-links">
-                        <p>Retrouvez-moi aussi sur :</p>
-                        <div class="links">
-                            <a href="#" target="_blank" aria-label="LinkedIn">LinkedIn</a>
-                            <span class="separator">|</span>
-                            <a href="#" target="_blank" aria-label="GitHub">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Mon Portfolio. Conçu avec passion.</p>
+            <p>&copy; 2026 Lagarde Tymothé. Conçu avec passion.</p>
         </div>
     </footer>
 

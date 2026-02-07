@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mes projets de développement - Portfolio Technique">
+    <meta name="theme-color" content="#1a0f2e">
+    <title>Projets | Lagarde Tymothé</title>
+
+    <!-- Polices (Google Fonts - Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Minimal Glassmorphic Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-wrapper">
+            <div class="nav-tabs">
+                <a href="index.html" class="nav-tab">
+                    <i class="fa-solid fa-home"></i>
+                    <span>Accueil</span>
+                </a>
+                <a href="projets.html" class="nav-tab active">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Projets</span>
+                </a>
+                <a href="parcours.html" class="nav-tab">
+                    <i class="fa-solid fa-timeline"></i>
+                    <span>Parcours</span>
+                </a>
+                <a href="contact.html" class="nav-tab">
+                    <i class="fa-solid fa-address-card"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="projects" class="projects section page-section">
+            <div class="container">
+                <h2 class="section-title">Mes Projets</h2>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+
+                    <!-- Project 1: Unity (Nov 2025) -->
+                    <article class="timeline-project" data-year="2025">
+                        <div class="timeline-dot"></div>
+                        <div class="project-card-wrapper">
+                            <div class="project-header">
+                                <span class="project-date">Nov 2025</span>
+                                <div class="project-title-row">
+                                    <div class="project-icon"><i class="fa-brands fa-unity"></i></div>
+                                    <h3 class="project-title">Prototype FPS Multijoueur</h3>
+                                </div>
+                                <p class="project-summary">Prototype de FPS nerveux multijoueur créé pour maîtriser
+                                    l'architecture Unity et le Netcode.</p>
+                                <button class="expand-btn">
+                                    <span>Découvrir</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                            </div>
+
+                            <div class="project-details">
+                                <div class="details-content">
+                                    <p class="full-description">
+                                        Ce projet est un prototype de FPS (First Person Shooter) multijoueur
+                                        "client-hosted", développé en <strong>C# avec Unity</strong>.
+                                        L'objectif principal était l'apprentissage approfondi de l'architecture Unity et
+                                        des problématiques réseaux complexes.
+                                        Réalisé en binôme via <strong>GitHub</strong>, il m'a permis de développer des
+                                        compétences solides en collaboration technique.
+                                    </p>
+
+                                    <div class="tech-stack-section">
+                                        <h4><i class="fa-solid fa-microchip"></i> Stack Technique & Défis</h4>
+                                        <ul class="tech-details-list">
+                                            <li>
+                                                <strong>Netcode & Synchro :</strong> Implémentation de <em>lag
+                                                    compensation</em> et d'un <em>rewind buffer</em> pour assurer que
+                                                les tirs touchent leur cible correctement (hit registration) malgré la
+                                                latence.
+                                            </li>
+                                            <li>
+                                                <strong>Architecture :</strong> Gestion des RPCs (Remote Procedure
+                                                Calls) optimisée pour minimiser les paquets réseaux.
+                                            </li>
+                                            <li>
+                                                <strong>Outils 3D :</strong> Utilisation de <strong>Blender</strong>
+                                                pour la modélisation des armes.
+                                            </li>
+                                            <li>
+                                                <strong>IA Assistant :</strong> Utilisation proactive de l'IA pour
+                                                accélérer la montée en compétence sur le C# et les patterns Unity.
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="project-gallery">
+                                        <div class="gallery-scroll">
+                                            <img src="assets/images/ProjetUnity/Capture d'écran 2026-02-07 020712.png"
+                                                alt="Unity FPS Gameplay 1" loading="lazy">
+                                            <img src="assets/images/ProjetUnity/Capture d'écran 2026-02-07 021519.png"
+                                                alt="Unity FPS Gameplay 2" loading="lazy">
+                                            <img src="assets/images/ProjetUnity/Capture d'écran 2026-02-07 021649.png"
+                                                alt="Unity FPS Editor View" loading="lazy">
+                                        </div>
+                                        <p class="gallery-hint"><i class="fa-solid fa-arrow-right"></i> Scroll pour voir
+                                            plus</p>
+                                    </div>
+
+                                    <div class="project-footer">
+                                        <a href="https://github.com/Wuy-Bots" target="_blank" class="github-btn">
+                                            <i class="fa-brands fa-github"></i> Voir sur GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Crypto (Juin 2025) -->
+                    <article class="timeline-project" data-year="2025">
+                        <div class="timeline-dot"></div>
+                        <div class="project-card-wrapper">
+                            <div class="project-header">
+                                <span class="project-date">Juin 2025</span>
+                                <div class="project-title-row">
+                                    <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+                                    <h3 class="project-title">Backtesting Crypto & IA</h3>
+                                </div>
+                                <p class="project-summary">Logiciel d'optimisation de stratégie de trading crypto sur
+                                    données historiques.</p>
+                                <button class="expand-btn">
+                                    <span>Découvrir</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                            </div>
+
+                            <div class="project-details">
+                                <div class="details-content">
+                                    <p class="full-description">
+                                        Développement d'un logiciel complet de backtesting pour valider et optimiser une
+                                        stratégie de trading crypto imaginée par un collègue.
+                                        Le moteur permet de simuler des années de trading en quelques secondes pour
+                                        trouver les paramètres optimaux (Gain max / Perte min).
+                                    </p>
+
+                                    <div class="alert-box">
+                                        <i class="fa-solid fa-lock"></i>
+                                        <span>Projet confidentiel - Code source privé</span>
+                                    </div>
+
+                                    <div class="tech-stack-section">
+                                        <h4><i class="fa-solid fa-microchip"></i> Stack Technique & Défis</h4>
+                                        <ul class="tech-details-list">
+                                            <li>
+                                                <strong>Performance :</strong> Simulation sur grands jeux de données
+                                                historiques avec optimisation des calculs.
+                                            </li>
+                                            <li>
+                                                <strong>Visualisation :</strong> Génération de graphiques dynamiques via
+                                                <strong>Matplotlib</strong> pour analyser les points d'entrée/sortie et
+                                                l'évolution du portefeuille.
+                                            </li>
+                                            <li>
+                                                <strong>Python & IA :</strong> Développement assisté par IA pour
+                                                l'implémentation rapide des algorithmes financiers complexes.
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="project-gallery placeholder-gallery">
+                                        <div class="placeholder-content">
+                                            <i class="fa-regular fa-image"></i>
+                                            <p>Captures d'écran à venir</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-footer">
+                                        <span class="github-btn disabled">
+                                            <i class="fa-brands fa-github"></i> Code Privé
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: BipBoup (2021) -->
+                    <article class="timeline-project" data-year="2021">
+                        <div class="timeline-dot"></div>
+                        <div class="project-card-wrapper">
+                            <div class="project-header">
+                                <span class="project-date">2021 - 2025</span>
+                                <div class="project-title-row">
+                                    <div class="project-icon"><i class="fa-brands fa-discord"></i></div>
+                                    <h3 class="project-title">BipBoup - Bot Discord Sokoban</h3>
+                                </div>
+                                <p class="project-summary">Bot Discord ludique transformant le chat en jeu de puzzle
+                                    Sokoban interactif.</p>
+                                <button class="expand-btn">
+                                    <span>Découvrir</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                            </div>
+
+                            <div class="project-details">
+                                <div class="details-content">
+                                    <p class="full-description">
+                                        Mon premier projet d'envergure, démarré à 17 ans en autodidacte total. BipBoup
+                                        est un bot qui permet de jouer au célèbre puzzle <strong>Sokoban</strong>
+                                        directement dans un salon Discord.
+                                        Récemment mis à jour pour s'adapter aux nouvelles API Discord, ce projet
+                                        témoigne de ma persévérance et de ma capacité à évoluer avec les technologies.
+                                    </p>
+
+                                    <div class="tech-stack-section">
+                                        <h4><i class="fa-solid fa-microchip"></i> Stack Technique & Défis</h4>
+                                        <ul class="tech-details-list">
+                                            <li>
+                                                <strong>Ingéniosité :</strong> Détournement de l'interface textuelle de
+                                                Discord et des réactions (emojis) pour créer un contrôleur de jeu temps
+                                                réel.
+                                            </li>
+                                            <li>
+                                                <strong>Algorithmique :</strong> Gestion des collisions, déplacements de
+                                                caisses et validation de victoire (sokoban logic).
+                                            </li>
+                                            <li>
+                                                <strong>Adaptabilité :</strong> Refactoring récent du code legacy pour
+                                                maintenir le bot opérationnel malgré les changements majeurs de
+                                                l'infrastructure Discord.
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="project-gallery">
+                                        <div class="gallery-scroll">
+                                            <img src="assets/images/BipBoup/Capture d'écran 2026-02-07 025247.png"
+                                                alt="BipBoup Gameplay" loading="lazy">
+                                            <img src="assets/images/BipBoup/Capture d'écran 2026-02-07 030007.png"
+                                                alt="BipBoup Code" loading="lazy">
+                                        </div>
+                                    </div>
+
+                                    <div class="project-footer">
+                                        <a href="https://github.com/Wuy-Bots/BipBoup" target="_blank"
+                                            class="github-btn">
+                                            <i class="fa-brands fa-github"></i> Voir sur GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Lagarde Tymothé. Conçu avec passion.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
