@@ -1259,9 +1259,10 @@ body {
         padding: 1.5rem;
     }
 
-    .page-section {
+    .page-section,
+    .hero {
         padding-top: 140px;
-        /* Increased to prevent nav overlap */
+        /* Increased to prevent nav overlap on all pages */
     }
 
     /* New Timeline Responsive Fixes */
