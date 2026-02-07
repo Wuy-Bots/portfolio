@@ -105,15 +105,6 @@ body {
     background-clip: text;
 }
 
-/* Specific fix for Homepage Title to remove overlapping line */
-.section-title.home-title {
-    margin-bottom: 1rem;
-}
-
-.section-title.home-title::after {
-    content: none;
-}
-
 .accent-subtitle {
     text-align: center;
     color: var(--accent-pink);
@@ -121,27 +112,14 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    margin-top: 0;
-    margin-bottom: 4rem;
+    margin-top: -2.5rem;
+    margin-bottom: 2.5rem;
     position: relative;
     z-index: 2;
     display: block;
     width: 100%;
 }
 
-/* Move the decorative line to the subtitle for homepage */
-.accent-subtitle::after {
-    content: '';
-    position: absolute;
-    bottom: -1.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, var(--violet-600), var(--accent-pink));
-    border-radius: 2px;
-    box-shadow: var(--glow-violet);
-}
 
 .section-title::after {
     content: '';
@@ -163,13 +141,13 @@ body {
 
 /* HERO SCREEN & INTRO */
 .hero-screen {
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 280px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
 }
 
 .intro-text-large {
@@ -505,11 +483,6 @@ body {
 .page-section {
     min-height: calc(100vh - 120px);
     padding-top: 120px;
-}
-
-/* Override for home page to reduce top spacing */
-.home.page-section {
-    padding-top: 80px;
 }
 
 /* =========================================
