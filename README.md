@@ -2,7 +2,7 @@
 
 Ce dépôt contient le code source de mon portfolio technique personnel (2026), conçu pour présenter mes compétences en développement logiciel (C#, Unity, Python) et web.
 
-🔗 **Live Demo** : [https://wuy-bots.github.io/portefolio/](https://wuy-bots.github.io/portefolio/)
+🔗 **Live Demo** : [https://wuy-bots.github.io/portefolio/](https://wuy-bots.github.io/portfolio/)
 
 ---
 
