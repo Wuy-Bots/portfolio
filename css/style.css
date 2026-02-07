@@ -1276,15 +1276,15 @@ body {
 
     /* New Timeline Responsive Fixes */
     .timeline-container {
-        padding-left: 30px;
+        padding-left: 40px;
     }
 
     .timeline-line {
-        left: 0;
+        left: 18px;
     }
 
     .timeline-dot {
-        left: -11px;
+        left: -31px;
     }
 }
 
