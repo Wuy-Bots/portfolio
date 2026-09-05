@@ -1,91 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mes projets de développement - Portfolio Technique">
-    <meta name="theme-color" content="#1a0f2e">
-    <title>Projets | Lagarde Tymothé</title>
-
-    <!-- Polices (Google Fonts - Inter) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Icons (FontAwesome) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Quatre projets personnels de Tymothé Lagarde : FPS Unity, backtesting Python, bot Discord et mini-jeux.">
+<meta name="theme-color" content="#08090b">
+<title>Projets | Tymothé Lagarde</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
 </head>
-
-<body>
-
-    <!-- Minimal Glassmorphic Navigation -->
-    <nav class="glass-nav">
-        <div class="nav-wrapper">
-            <div class="nav-tabs">
-                <a href="index.html" class="nav-tab">
-                    <i class="fa-solid fa-home"></i>
-                    <span>Accueil</span>
-                </a>
-                <a href="projets.html" class="nav-tab active">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Projets</span>
-                </a>
-                <a href="parcours.html" class="nav-tab">
-                    <i class="fa-solid fa-timeline"></i>
-                    <span>Parcours</span>
-                </a>
-                <a href="contact.html" class="nav-tab">
-                    <i class="fa-solid fa-address-card"></i>
-                    <span>Contact</span>
-                </a>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        <section id="projects" class="projects section page-section">
-            <div class="container">
-                <h2 class="section-title">Mes Projets</h2>
-
-                <div class="timeline-container">
-                    <div class="timeline-line"></div>
-
-                    <!-- Project 1: Unity (Nov 2025) -->
-                    <article class="timeline-project" data-year="2025">
-                        <div class="timeline-dot"></div>
-                        <div class="project-card-wrapper">
-                            <div class="project-header">
-                                <span class="project-date">Nov 2025</span>
-                                <div class="project-title-row">
-                                    <div class="project-icon"><i class="fa-brands fa-unity"></i></div>
-                                    <h3 class="project-title">Prototype FPS Multijoueur</h3>
-                                </div>
-                                <p class="project-summary">Prototype de FPS nerveux multijoueur créé pour maîtriser
-                                    l'architecture Unity et le Netcode.</p>
-                                <button class="expand-btn">
-                                    <span>Découvrir</span>
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </button>
-                            </div>
-
-                            <div class="project-details">
-                                <div class="details-content">
+<body class="page-projets"><a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header container"><a class="wordmark" href="index.html" aria-label="Tymothé Lagarde — accueil">tl<span>.</span></a>
+<nav aria-label="Navigation principale"><a href="index.html" >Accueil</a><a href="projets.html" aria-current="page">Projets</a><a href="parcours.html" >Parcours</a><a href="contact.html" >Contact</a>
+</nav>
+</header>
+<main id="contenu" class="container">
+<section class="page-intro"><span class="eyebrow">Réalisations</span>
+<div class="page-intro-row">
+<h1>Mes projets</h1>
+<p>Quelques projets réalisés pour apprendre et essayer différentes choses. J’y présente leur fonctionnement, les difficultés rencontrées et ce que j’ai pu en retenir.</p>
+</div>
+<div class="page-intro-bottom"><span>4 projets · 2014 — 2025</span><span>Logiciel & jeux</span>
+</div>
+</section>
+<section class="project-collection" aria-label="Les projets">
+<article class="project-entry" id="fps">
+<div class="project-entry-meta"><span class="eyebrow">01 / Nov 2025</span><span>Unity / C# · Jeu en réseau</span>
+</div>
+<div class="project-entry-main"><div class="project-preview"><img src="assets/images/ProjetUnity/unity-fps-gameplay-1.png" alt="Unity FPS Gameplay 1" loading="lazy"></div>
+<div class="project-entry-text">
+<h2>Prototype FPS multijoueur</h2>
+<p>Un petit prototype réalisé pour expérimenter avec C# et Unity, que je connais encore peu.</p><button class="text-link small project-toggle" type="button" aria-controls="details-fps" aria-expanded="false" hidden><span class="toggle-label">Voir les détails</span><span class="toggle-arrow" aria-hidden="true">↓</span></button>
+</div>
+</div>
+<div class="project-disclosure" id="details-fps">
+<div class="details-content">
                                     <p class="full-description">
                                         Ce projet est un prototype de FPS (First Person Shooter) multijoueur
                                         "client-hosted", développé en <strong>C# avec Unity</strong>.
-                                        L'objectif principal était l'apprentissage approfondi de l'architecture Unity et
-                                        des problématiques réseaux complexes.
-                                        Réalisé en binôme via <strong>GitHub</strong>, il m'a permis de développer des
-                                        compétences solides en collaboration technique.
+                                        L’objectif était de découvrir l’architecture Unity et les difficultés liées au réseau. Réalisé en binôme via <strong>GitHub</strong>, ce projet m’a aussi permis de m’exercer au travail sur un code partagé.
                                     </p>
 
                                     <div class="tech-stack-section">
-                                        <h4><i class="fa-solid fa-microchip"></i> Stack Technique & Défis</h4>
+                                        <h4> Outils et difficultés rencontrées</h4>
                                         <ul class="tech-details-list">
                                             <li>
                                                 <strong>Netcode & Synchro :</strong> Implémentation de <em>lag
@@ -102,14 +60,13 @@
                                                 pour la modélisation des armes.
                                             </li>
                                             <li>
-                                                <strong>IA Assistant :</strong> Utilisation proactive de l'IA pour
-                                                accélérer la montée en compétence sur le C# et les patterns Unity.
+                                                <strong>IA Assistant :</strong> Utilisation de l’IA comme aide pour comprendre certains concepts en C# et dans Unity.
                                             </li>
                                         </ul>
                                     </div>
 
                                     <div class="project-gallery">
-                                        <div class="gallery-scroll">
+                                        <div class="gallery-scroll" tabindex="0" role="region" aria-label="Captures du projet, galerie défilante">
                                             <img src="assets/images/ProjetUnity/unity-fps-gameplay-1.png"
                                                 alt="Unity FPS Gameplay 1" loading="lazy">
                                             <img src="assets/images/ProjetUnity/unity-fps-gameplay-2.png"
@@ -117,55 +74,39 @@
                                             <img src="assets/images/ProjetUnity/unity-fps-editor-view.png"
                                                 alt="Unity FPS Editor View" loading="lazy">
                                         </div>
-                                        <p class="gallery-hint"><i class="fa-solid fa-arrow-right"></i> Scroll pour voir
-                                            plus</p>
+                                        <p class="gallery-hint"> Faire défiler les captures →</p>
                                     </div>
 
                                     <div class="project-footer">
-                                        <a href="https://github.com/Wuy-Bots" target="_blank" class="github-btn">
-                                            <i class="fa-brands fa-github"></i> Voir sur GitHub
+                                        <a href="https://github.com/Wuy-Bots" target="_blank" rel="noopener noreferrer" class="github-btn">
+                                             Voir sur GitHub
                                         </a>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 2: Crypto (Juin 2025) -->
-                    <article class="timeline-project" data-year="2025">
-                        <div class="timeline-dot"></div>
-                        <div class="project-card-wrapper">
-                            <div class="project-header">
-                                <span class="project-date">Juin 2025</span>
-                                <div class="project-title-row">
-                                    <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
-                                    <h3 class="project-title">Backtesting Crypto & IA</h3>
-                                </div>
-                                <p class="project-summary">Logiciel d'optimisation de stratégie de trading crypto sur
-                                    données historiques.</p>
-                                <button class="expand-btn">
-                                    <span>Découvrir</span>
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </button>
-                            </div>
-
-                            <div class="project-details">
-                                <div class="details-content">
+</div>
+</div>
+</article>
+<article class="project-entry" id="backtesting">
+<div class="project-entry-meta"><span class="eyebrow">02 / Juin 2025</span><span>Python · Analyse de données</span>
+</div>
+<div class="project-entry-main"><div class="project-preview"><img src="assets/images/backtest crypto/Capture d'écran 2026-02-09 184801.png" alt="Interface principale du gestionnaire de stratégies de backtest" loading="lazy"></div>
+<div class="project-entry-text">
+<h2>Backtesting crypto & IA</h2>
+<p>Logiciel d'optimisation de stratégie de trading crypto sur données historiques.</p><button class="text-link small project-toggle" type="button" aria-controls="details-backtesting" aria-expanded="false" hidden><span class="toggle-label">Voir les détails</span><span class="toggle-arrow" aria-hidden="true">↓</span></button>
+</div>
+</div>
+<div class="project-disclosure" id="details-backtesting">
+<div class="details-content">
                                     <p class="full-description">
-                                        Application complète de <strong>backtesting de stratégies
-                                            d'investissement</strong>
-                                        sur les marchés financiers actuels, développée en <strong>Python 3.13</strong>.
-                                        Ce projet personnel récent combine analyse de données, visualisation interactive
-                                        et gestion avancée de stratégies multiples.
+                                        Outil personnel de <strong>backtesting de stratégies d’investissement</strong>, développé en <strong>Python 3.13</strong>. Il permet de tester des paramètres sur des données historiques, de visualiser les résultats et de comparer plusieurs stratégies.
                                     </p>
 
                                     <div class="alert-box">
-                                        <i class="fa-solid fa-lock"></i>
-                                        <span>Projet confidentiel - Code source privé</span>
+
+                                        <span>Code source non public</span>
                                     </div>
 
                                     <div class="tech-stack-section">
-                                        <h4><i class="fa-solid fa-microchip"></i> Architecture & Fonctionnalités</h4>
+                                        <h4> Fonctionnement</h4>
                                         <ul class="tech-details-list">
                                             <li>
                                                 <strong>Moteur d'analyse :</strong> Les backtests génèrent des
@@ -185,7 +126,7 @@
                                                 rapide des stratégies favorites.
                                             </li>
                                             <li>
-                                                <strong>Logging Avancé :</strong> Chaque stratégie génère
+                                                <strong>Journaux de résultats :</strong> Chaque stratégie génère
                                                 automatiquement
                                                 des logs détaillés (<strong>CSV + XLSX</strong>) triés par jour
                                                 d'analyse,
@@ -195,7 +136,7 @@
                                     </div>
 
                                     <div class="project-gallery">
-                                        <div class="gallery-scroll">
+                                        <div class="gallery-scroll" tabindex="0" role="region" aria-label="Captures du projet, galerie défilante">
                                             <img src="assets/images/backtest crypto/Capture d'écran 2026-02-09 184801.png"
                                                 alt="Interface principale du gestionnaire de stratégies de backtest"
                                                 loading="lazy">
@@ -203,53 +144,37 @@
                                                 alt="Graphiques interactifs Matplotlib d'analyse de stratégie"
                                                 loading="lazy">
                                         </div>
-                                        <p class="gallery-hint"><i class="fa-solid fa-arrow-right"></i> Scroll pour voir
-                                            plus</p>
+                                        <p class="gallery-hint"> Faire défiler les captures →</p>
                                     </div>
 
                                     <div class="project-footer">
                                         <span class="github-btn disabled">
-                                            <i class="fa-brands fa-github"></i> Code Privé
+                                             Code Privé
                                         </span>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 3: BipBoup (2021) -->
-                    <article class="timeline-project" data-year="2021">
-                        <div class="timeline-dot"></div>
-                        <div class="project-card-wrapper">
-                            <div class="project-header">
-                                <span class="project-date">2021 - 2025</span>
-                                <div class="project-title-row">
-                                    <div class="project-icon"><i class="fa-brands fa-discord"></i></div>
-                                    <h3 class="project-title">BipBoup - Bot Discord Sokoban</h3>
-                                </div>
-                                <p class="project-summary">Bot Discord ludique transformant le chat en jeu de puzzle
-                                    Sokoban interactif.</p>
-                                <button class="expand-btn">
-                                    <span>Découvrir</span>
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </button>
-                            </div>
-
-                            <div class="project-details">
-                                <div class="details-content">
+</div>
+</div>
+</article>
+<article class="project-entry" id="bipboup">
+<div class="project-entry-meta"><span class="eyebrow">03 / 2021 - 2025</span><span>Python · Bot Discord</span>
+</div>
+<div class="project-entry-main"><div class="project-preview"><img src="assets/images/BipBoup/bipboup-gameplay.png" alt="BipBoup Gameplay" loading="lazy"></div>
+<div class="project-entry-text">
+<h2>BipBoup</h2>
+<p>Un bot pour jouer au puzzle Sokoban directement dans un salon Discord.</p><button class="text-link small project-toggle" type="button" aria-controls="details-bipboup" aria-expanded="false" hidden><span class="toggle-label">Voir les détails</span><span class="toggle-arrow" aria-hidden="true">↓</span></button>
+</div>
+</div>
+<div class="project-disclosure" id="details-bipboup">
+<div class="details-content">
                                     <p class="full-description">
-                                        Mon premier projet d'envergure, démarré à 17 ans en autodidacte total. BipBoup
-                                        est un bot qui permet de jouer au célèbre puzzle <strong>Sokoban</strong>
-                                        directement dans un salon Discord.
-                                        Récemment mis à jour pour s'adapter aux nouvelles API Discord, ce projet
-                                        témoigne de ma persévérance et de ma capacité à évoluer avec les technologies.
+                                        J’ai commencé BipBoup à 17 ans pour apprendre à créer un bot Discord. Il permet de jouer au puzzle <strong>Sokoban</strong> dans un salon. J’ai ensuite repris le code pour l’adapter aux changements de l’API Discord.
                                     </p>
 
                                     <div class="tech-stack-section">
-                                        <h4><i class="fa-solid fa-microchip"></i> Stack Technique & Défis</h4>
+                                        <h4> Outils et difficultés rencontrées</h4>
                                         <ul class="tech-details-list">
                                             <li>
-                                                <strong>Ingéniosité :</strong> Détournement de l'interface textuelle de
+                                                <strong>Interface :</strong> Détournement de l'interface textuelle de
                                                 Discord et des réactions (emojis) pour créer un contrôleur de jeu temps
                                                 réel.
                                             </li>
@@ -258,7 +183,7 @@
                                                 caisses et validation de victoire (sokoban logic).
                                             </li>
                                             <li>
-                                                <strong>Adaptabilité :</strong> Refactoring récent du code legacy pour
+                                                <strong>Maintenance :</strong> Refactoring récent du code legacy pour
                                                 maintenir le bot opérationnel malgré les changements majeurs de
                                                 l'infrastructure Discord.
                                             </li>
@@ -266,7 +191,7 @@
                                     </div>
 
                                     <div class="project-gallery">
-                                        <div class="gallery-scroll">
+                                        <div class="gallery-scroll" tabindex="0" role="region" aria-label="Captures du projet, galerie défilante">
                                             <img src="assets/images/BipBoup/bipboup-gameplay.png" alt="BipBoup Gameplay"
                                                 loading="lazy">
                                             <img src="assets/images/BipBoup/bipboup-code.png" alt="BipBoup Code"
@@ -275,36 +200,25 @@
                                     </div>
 
                                     <div class="project-footer">
-                                        <a href="https://github.com/Wuy-Bots/BipBoup" target="_blank"
+                                        <a href="https://github.com/Wuy-Bots/BipBoup" target="_blank" rel="noopener noreferrer"
                                             class="github-btn">
-                                            <i class="fa-brands fa-github"></i> Voir sur GitHub
+                                             Voir sur GitHub
                                         </a>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 4: Mini-Jeux Python Tkinter (2014-2017) -->
-                    <article class="timeline-project" data-year="2015">
-                        <div class="timeline-dot"></div>
-                        <div class="project-card-wrapper">
-                            <div class="project-header">
-                                <span class="project-date">2014 - 2017</span>
-                                <div class="project-title-row">
-                                    <div class="project-icon"><i class="fa-brands fa-python"></i></div>
-                                    <h3 class="project-title">Mini-Jeux Python &amp; Tkinter</h3>
-                                </div>
-                                <p class="project-summary">Collection de mini-jeux codés à la main en Python avec
-                                    Tkinter durant le collège — mes tout premiers programmes.</p>
-                                <button class="expand-btn">
-                                    <span>Découvrir</span>
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </button>
-                            </div>
-
-                            <div class="project-details">
-                                <div class="details-content">
+</div>
+</div>
+</article>
+<article class="project-entry" id="mini-jeux">
+<div class="project-entry-meta"><span class="eyebrow">04 / 2014 - 2017</span><span>Python / Tkinter · Mini-jeux</span>
+</div>
+<div class="project-entry-main"><div class="project-preview"><img src="assets/images/JeuxPython/pfc-1joueur.png" alt="Pierre Feuille Ciseaux 1 joueur" loading="lazy"></div>
+<div class="project-entry-text">
+<h2>Mes premiers jeux</h2>
+<p>Collection de mini-jeux codés à la main en Python avec Tkinter durant le collège — mes tout premiers programmes.</p><button class="text-link small project-toggle" type="button" aria-controls="details-mini-jeux" aria-expanded="false" hidden><span class="toggle-label">Voir les détails</span><span class="toggle-arrow" aria-hidden="true">↓</span></button>
+</div>
+</div>
+<div class="project-disclosure" id="details-mini-jeux">
+<div class="details-content">
                                     <p class="full-description">
                                         Mes tout premiers pas en programmation ! Ce recueil de mini-jeux a été réalisé
                                         <strong>entre le collège (2014-2017)</strong>, entièrement codé à la main en
@@ -316,7 +230,7 @@
                                     </p>
 
                                     <div class="tech-stack-section">
-                                        <h4><i class="fa-solid fa-gamepad"></i> Les Jeux</h4>
+                                        <h4> Les Jeux</h4>
                                         <ul class="tech-details-list">
                                             <li>
                                                 <strong>Pierre Feuille Ciseaux (1 joueur) :</strong> L'utilisateur
@@ -352,7 +266,7 @@
                                     </div>
 
                                     <div class="tech-stack-section">
-                                        <h4><i class="fa-solid fa-bug"></i> Bugs connus &amp; anecdotes</h4>
+                                        <h4> Bugs connus &amp; anecdotes</h4>
                                         <ul class="tech-details-list">
                                             <li>
                                                 <strong>Roulette — Scoreboard :</strong> Le classement n'est pas trié
@@ -370,7 +284,7 @@
                                     </div>
 
                                     <div class="project-gallery">
-                                        <div class="gallery-scroll">
+                                        <div class="gallery-scroll" tabindex="0" role="region" aria-label="Captures du projet, galerie défilante">
                                             <img src="assets/images/JeuxPython/pfc-1joueur.png"
                                                 alt="Pierre Feuille Ciseaux 1 joueur" loading="lazy">
                                             <img src="assets/images/JeuxPython/pfc-2joueurs.png"
@@ -380,34 +294,26 @@
                                             <img src="assets/images/JeuxPython/morpion.png" alt="Morpion"
                                                 loading="lazy">
                                         </div>
-                                        <p class="gallery-hint"><i class="fa-solid fa-arrow-right"></i> Scroll pour voir
-                                            plus</p>
+                                        <p class="gallery-hint"> Faire défiler les captures →</p>
                                     </div>
 
                                     <div class="project-footer">
-                                        <a href="https://github.com/Wuy-Bots/Mini-jeux_Python" target="_blank"
+                                        <a href="https://github.com/Wuy-Bots/Mini-jeux_Python" target="_blank" rel="noopener noreferrer"
                                             class="github-btn">
-                                            <i class="fa-brands fa-github"></i> Voir sur GitHub
+                                             Voir sur GitHub
                                         </a>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Lagarde Tymothé - Portfolio technique</p>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+</div>
+</div>
+</article>
+</section>
+<section class="contact-strip">
+<div><span class="eyebrow">Contact</span>
+<h2>Une question sur mes projets ?</h2>
+</div><a class="text-link" href="contact.html">Me contacter <span aria-hidden="true">↗</span></a>
+</section>
+</main>
+<footer class="site-footer container"><a href="index.html">Tymothé Lagarde<span>© 2026</span></a><span>Portfolio personnel</span><a href="https://github.com/Wuy-Bots" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+</footer>
 </body>
-
 </html>

@@ -1,141 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfolio de Lagarde Tymothé, développeur en reconversion. Projets, parcours et contact.">
-    <meta name="theme-color" content="#1a0f2e">
-    <title>Lagarde Tymothé | Développeur Logiciel & Jeux</title>
-
-    <!-- Polices (Google Fonts - Inter) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Icons (FontAwesome) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tymothé Lagarde, développeur autodidacte à Montpellier. Projets personnels en Python et première expérimentation avec Unity.">
+<meta name="theme-color" content="#08090b">
+<title>Développeur logiciel & jeux | Tymothé Lagarde</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
 </head>
+<body class="page-index"><a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header container"><a class="wordmark" href="index.html" aria-label="Tymothé Lagarde — accueil">tl<span>.</span></a>
+<nav aria-label="Navigation principale"><a href="index.html" aria-current="page">Accueil</a><a href="projets.html" >Projets</a><a href="parcours.html" >Parcours</a><a href="contact.html" >Contact</a>
+</nav>
+</header>
+<main id="contenu" class="container">
+<section class="hero" aria-labelledby="hero-title">
+<div class="hero-meta"><span class="eyebrow">Développement logiciel & jeux</span><span class="eyebrow">Montpellier, FR</span>
+</div>
+<div class="hero-layout">
+<h1 id="hero-title">Tymothé Lagarde</h1>
+<div class="hero-intro">
 
-<body>
-
-    <!-- Minimal Glassmorphic Navigation -->
-    <nav class="glass-nav">
-        <div class="nav-wrapper">
-            <div class="nav-tabs">
-                <a href="index.html" class="nav-tab active">
-                    <i class="fa-solid fa-home"></i>
-                    <span>Accueil</span>
-                </a>
-                <a href="projets.html" class="nav-tab">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Projets</span>
-                </a>
-                <a href="parcours.html" class="nav-tab">
-                    <i class="fa-solid fa-timeline"></i>
-                    <span>Parcours</span>
-                </a>
-                <a href="contact.html" class="nav-tab">
-                    <i class="fa-solid fa-address-card"></i>
-                    <span>Contact</span>
-                </a>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        <section id="home" class="home section page-section">
-            <div class="container">
-                <h2 class="section-title">Lagarde Tymothé</h2>
-                <p class="accent-subtitle">DÉVELOPPEUR PASSIONNÉ · EN QUÊTE D'ALTERNANCE</p>
-
-                <!-- Hero Screen (Centered intro only) -->
-                <div class="hero-screen">
-                    <!-- Intro Text (NO BOX, FREE FLOATING) -->
-                    <p class="intro-text-large">
-                        Passionné par le développement depuis plus de <strong>10 ans</strong>,
-                        j'ai forgé mes compétences en autodidacte, projet après projet.<br>
-                        Aujourd'hui, je mets cette expérience au service de
-                        <strong>projets concrets</strong> et je recherche une alternance
-                        pour approfondir mes compétences en entreprise.
-                    </p>
-
-                    <!-- Buttons -->
-                    <div class="hero-cta">
-                        <a href="projets.html" class="btn btn-primary">Voir mes projets</a>
-                        <a href="contact.html" class="btn btn-outline">Me contacter</a>
-                    </div>
-
-                    <!-- Scroll Hint -->
-                    <a href="#autodidacte" class="scroll-hint">
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </a>
-                </div>
-
-                <!-- Autodidacte & Tools (BELOW FOLD) -->
-                <div id="autodidacte" class="motivation-grid">
-                    <div class="motivation-content glass-card" style="padding: 2rem;">
-                        <h3 class="subsection-title"><i class="fa-solid fa-graduation-cap"
-                                style="color: var(--violet-400); margin-right: 0.5rem;"></i> Autodidacte depuis le
-                            collège
-                        </h3>
-                        <p class="motivation-text">
-                            Mes premiers pas en Python, je les ai faits sur <strong>OpenClassrooms</strong> à 10 ans,
-                            par pure curiosité. Ce qui me plaît dans le développement, c'est sa logique implacable :
-                            si quelque chose ne fonctionne pas, la raison est toujours claire — et c'est à moi de
-                            trouver la solution. J'aime me confronter aux problèmes, et surtout le moment où
-                            tout finit par fonctionner.
-                        </p>
-                        <p class="motivation-text">
-                            Mon niveau a encore beaucoup de marge de progression, et c'est justement ce qui
-                            m'enthousiasme. Que ce soit le développement logiciel, les jeux vidéo ou la
-                            cybersécurité, je veux comprendre l'informatique en profondeur et toucher à tout.
-                        </p>
-                        <div class="skills-tags">
-                            <span class="skill-tag"><i class="fa-solid fa-brain"></i> Logique & résolution</span>
-                            <span class="skill-tag"><i class="fa-solid fa-rocket"></i> Curiosité</span>
-                            <span class="skill-tag"><i class="fa-solid fa-lightbulb"></i> Créativité</span>
-                        </div>
-                    </div>
-
-                    <div class="tools-wrapper">
-                        <div class="tools-grid">
-                            <div class="tool-card">
-                                <i class="fa-brands fa-unity tool-icon"></i>
-                                <span>Unity / C#</span>
-                            </div>
-                            <div class="tool-card">
-                                <i class="fa-brands fa-python tool-icon"></i>
-                                <span>Python</span>
-                            </div>
-                            <div class="tool-card">
-                                <i class="fa-solid fa-code tool-icon"></i>
-                                <span>VS Code</span>
-                            </div>
-                            <div class="tool-card">
-                                <i class="fa-brands fa-github tool-icon"></i>
-                                <span>Git & GitHub</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Lagarde Tymothé - Portfolio technique</p>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+<p class="intro-lead">Je me forme au développement à travers des projets personnels.</p>
+<p>J’ai commencé avec Python. J’ai aussi essayé C# et Unity dans un petit projet, simplement pour expérimenter ; mes connaissances restent limitées sur ces outils.</p><a class="text-link" href="projets.html">Voir mes projets <span aria-hidden="true">↘</span></a>
+</div>
+</div>
+<div class="hero-bottom"><span>Projets personnels en Python</span><a href="#selection">Quelques réalisations <span aria-hidden="true">↓</span></a>
+</div>
+</section>
+<section id="selection" class="selected-work" aria-labelledby="selection-title">
+<div class="section-heading">
+<div><span class="eyebrow">Quelques réalisations</span>
+<h2 id="selection-title">Projets personnels</h2>
+</div><a class="text-link small" href="projets.html">Tous les projets <span aria-hidden="true">↗</span></a>
+</div>
+<div class="featured-layout"><a class="featured-project" href="projets.html#fps">
+<div class="project-image"><img src="assets/images/ProjetUnity/unity-fps-gameplay-1.png" alt="Unity FPS Gameplay 1" width="1892" height="958" loading="lazy"><span class="image-link" aria-hidden="true">↗</span>
+</div>
+<div class="featured-caption">
+<h3>Prototype FPS multijoueur</h3><span>Unity / C# · 2025</span>
+</div>
+<p>Un petit projet réalisé en binôme pour expérimenter avec C# et Unity.</p></a>
+<aside class="project-note"><span class="eyebrow">À propos du prototype</span><p>Ce projet m’a permis d’aborder la synchronisation entre joueurs et les effets de la latence.</p><p>Les détails techniques et quelques captures sont disponibles sur la page du projet.</p><a class="text-link small" href="projets.html#fps">Voir le projet <span aria-hidden="true">↗</span></a></aside>
+</div>
+<div class="project-index"><a href="projets.html#backtesting"><span class="index-number">02</span>
+<h3>Backtesting crypto & IA</h3><span class="index-tech">Python · Analyse de données</span><span aria-hidden="true">↗</span></a><a href="projets.html#bipboup"><span class="index-number">03</span>
+<h3>BipBoup</h3><span class="index-tech">Python · Bot Discord</span><span aria-hidden="true">↗</span></a><a href="projets.html#mini-jeux"><span class="index-number">04</span>
+<h3>Mes premiers jeux</h3><span class="index-tech">Python / Tkinter · Mini-jeux</span><span aria-hidden="true">↗</span></a>
+</div>
+</section>
+<section class="about-section" aria-labelledby="about-title">
+<div><span class="eyebrow">À propos</span>
+<h2 id="about-title">Un peu de contexte</h2><a class="text-link small" href="parcours.html">Mon parcours <span aria-hidden="true">↗</span></a>
+</div>
+<div class="about-copy">
+<p class="large-copy">J’ai découvert Python vers dix ans, avec les cours d’OpenClassrooms. Depuis, j’apprends surtout en essayant de faire mes propres programmes.</p>
+<p>J’aime comprendre comment les choses fonctionnent et chercher une solution quand je rencontre un problème. J’ai encore beaucoup à apprendre.</p>
+<p>Le développement logiciel, les jeux vidéo et la cybersécurité m’intéressent.</p>
+<dl class="tool-list">
+<div><dt>Développement</dt><dd>Python</dd>
+</div>
+<div><dt>Premiers essais</dt><dd>C# et Unity</dd>
+</div>
+<div><dt>Outils utilisés</dt><dd>Git, GitHub, VS Code</dd>
+</div>
+</dl>
+</div>
+</section>
+<section class="contact-strip">
+<div><span class="eyebrow">Contact</span>
+<h2>Une question sur mes projets ?</h2>
+</div><a class="text-link" href="contact.html">Me contacter <span aria-hidden="true">↗</span></a>
+</section>
+</main>
+<footer class="site-footer container"><a href="index.html">Tymothé Lagarde<span>© 2026</span></a><span>Portfolio personnel</span><a href="https://github.com/Wuy-Bots" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+</footer>
 </body>
-
 </html>
